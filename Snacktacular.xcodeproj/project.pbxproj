@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8598C18E29D1E7BC00FDBB1D /* SnacktacularApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598C18D29D1E7BC00FDBB1D /* SnacktacularApp.swift */; };
-		8598C19029D1E7BC00FDBB1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598C18F29D1E7BC00FDBB1D /* ContentView.swift */; };
+		8598C19029D1E7BC00FDBB1D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598C18F29D1E7BC00FDBB1D /* LoginView.swift */; };
 		8598C19229D1E7C100FDBB1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8598C19129D1E7C100FDBB1D /* Assets.xcassets */; };
 		8598C19529D1E7C100FDBB1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8598C19429D1E7C100FDBB1D /* Preview Assets.xcassets */; };
 		8598C19D29D21E2900FDBB1D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8598C19C29D21E2900FDBB1D /* FirebaseAuth */; };
@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		8598C18A29D1E7BB00FDBB1D /* Snacktacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8598C18D29D1E7BC00FDBB1D /* SnacktacularApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacktacularApp.swift; sourceTree = "<group>"; };
-		8598C18F29D1E7BC00FDBB1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8598C18F29D1E7BC00FDBB1D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8598C19129D1E7C100FDBB1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8598C19429D1E7C100FDBB1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8598C1A429D21FF800FDBB1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				8598C18D29D1E7BC00FDBB1D /* SnacktacularApp.swift */,
-				8598C18F29D1E7BC00FDBB1D /* ContentView.swift */,
+				8598C18F29D1E7BC00FDBB1D /* LoginView.swift */,
 				8598C19129D1E7C100FDBB1D /* Assets.xcassets */,
 				8598C1A429D21FF800FDBB1D /* GoogleService-Info.plist */,
 				8598C19329D1E7C100FDBB1D /* Preview Content */,
@@ -158,7 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8598C19029D1E7BC00FDBB1D /* ContentView.swift in Sources */,
+				8598C19029D1E7BC00FDBB1D /* LoginView.swift in Sources */,
 				8598C18E29D1E7BC00FDBB1D /* SnacktacularApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
