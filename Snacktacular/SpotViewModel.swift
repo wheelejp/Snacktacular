@@ -25,9 +25,9 @@ class SpotViewModel: ObservableObject {
             }
         } else {
             do {
-                try await db.collection("spots").addDocument(data: spot.dictionary)
+                _ = try await db.collection("spots").addDocument(data: spot.dictionary)
                 print("Data added successfully!🐣")
-                return true
+                return true 
             } catch {
                 print("ERROR: COuld not create new data in 'spots'😡 \(error.localizedDescription)")
                 return false

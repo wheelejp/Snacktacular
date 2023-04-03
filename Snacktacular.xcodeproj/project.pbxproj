@@ -11,6 +11,10 @@
 		858BCC7929D498AB000C50EF /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BCC7829D498AB000C50EF /* Spot.swift */; };
 		858BCC7B29D49971000C50EF /* SpotDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BCC7A29D49971000C50EF /* SpotDetailView.swift */; };
 		858BCC7D29D49C82000C50EF /* SpotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BCC7C29D49C82000C50EF /* SpotViewModel.swift */; };
+		858BCCA529DB429B000C50EF /* PlaceLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BCCA129DB4298000C50EF /* PlaceLookupView.swift */; };
+		858BCCA629DB429B000C50EF /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BCCA229DB4298000C50EF /* PlaceViewModel.swift */; };
+		858BCCA729DB429B000C50EF /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BCCA329DB429A000C50EF /* Place.swift */; };
+		858BCCA829DB429B000C50EF /* Location Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858BCCA429DB429B000C50EF /* Location Manager.swift */; };
 		8598C18E29D1E7BC00FDBB1D /* SnacktacularApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598C18D29D1E7BC00FDBB1D /* SnacktacularApp.swift */; };
 		8598C19029D1E7BC00FDBB1D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8598C18F29D1E7BC00FDBB1D /* LoginView.swift */; };
 		8598C19229D1E7C100FDBB1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8598C19129D1E7C100FDBB1D /* Assets.xcassets */; };
@@ -28,6 +32,10 @@
 		858BCC7A29D49971000C50EF /* SpotDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailView.swift; sourceTree = "<group>"; };
 		858BCC7C29D49C82000C50EF /* SpotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotViewModel.swift; sourceTree = "<group>"; };
 		858BCC7E29D4A64E000C50EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		858BCCA129DB4298000C50EF /* PlaceLookupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceLookupView.swift; sourceTree = "<group>"; };
+		858BCCA229DB4298000C50EF /* PlaceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		858BCCA329DB429A000C50EF /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		858BCCA429DB429B000C50EF /* Location Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location Manager.swift"; sourceTree = "<group>"; };
 		8598C18A29D1E7BB00FDBB1D /* Snacktacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8598C18D29D1E7BC00FDBB1D /* SnacktacularApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacktacularApp.swift; sourceTree = "<group>"; };
 		8598C18F29D1E7BC00FDBB1D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -73,10 +81,14 @@
 				858BCC7E29D4A64E000C50EF /* Info.plist */,
 				8598C18D29D1E7BC00FDBB1D /* SnacktacularApp.swift */,
 				858BCC7829D498AB000C50EF /* Spot.swift */,
+				858BCCA329DB429A000C50EF /* Place.swift */,
 				858BCC7C29D49C82000C50EF /* SpotViewModel.swift */,
+				858BCCA429DB429B000C50EF /* Location Manager.swift */,
+				858BCCA229DB4298000C50EF /* PlaceViewModel.swift */,
 				8598C18F29D1E7BC00FDBB1D /* LoginView.swift */,
 				858BCC7629D49242000C50EF /* ListView.swift */,
 				858BCC7A29D49971000C50EF /* SpotDetailView.swift */,
+				858BCCA129DB4298000C50EF /* PlaceLookupView.swift */,
 				8598C19129D1E7C100FDBB1D /* Assets.xcassets */,
 				8598C1A429D21FF800FDBB1D /* GoogleService-Info.plist */,
 				8598C19329D1E7C100FDBB1D /* Preview Content */,
@@ -172,10 +184,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858BCCA629DB429B000C50EF /* PlaceViewModel.swift in Sources */,
 				858BCC7B29D49971000C50EF /* SpotDetailView.swift in Sources */,
+				858BCCA529DB429B000C50EF /* PlaceLookupView.swift in Sources */,
+				858BCCA829DB429B000C50EF /* Location Manager.swift in Sources */,
 				8598C19029D1E7BC00FDBB1D /* LoginView.swift in Sources */,
 				858BCC7D29D49C82000C50EF /* SpotViewModel.swift in Sources */,
 				8598C18E29D1E7BC00FDBB1D /* SnacktacularApp.swift in Sources */,
+				858BCCA729DB429B000C50EF /* Place.swift in Sources */,
 				858BCC7729D49242000C50EF /* ListView.swift in Sources */,
 				858BCC7929D498AB000C50EF /* Spot.swift in Sources */,
 			);
@@ -310,6 +326,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Snacktacular/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app requires access to the device's location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires access to the device's location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -340,6 +358,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Snacktacular/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app requires access to the device's location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires access to the device's location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
