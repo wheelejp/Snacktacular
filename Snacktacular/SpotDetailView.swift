@@ -6,12 +6,24 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct SpotDetailView: View {
+    struct Annotation: Identifiable {
+        let id = UUID().uuidString
+        var name: String
+        var address: String
+        var coordinate: CLLocationCoordinate2D
+    }
+    
     @EnvironmentObject var spotVM: SpotViewModel
+    @EnvironmentObject var locationManager: LocationManager
     @State var spot: Spot
     @State private var showPlaceLookupSheet = false
+    @State private var mapRegion = MKCoordinateRegion()
+    @State private var annotations: [Annotation] = []
     @Environment(\.dismiss) private var dismiss
+    let regionSize = 500.0 //meters
     
     var body: some View {
         VStack {
@@ -30,7 +42,25 @@ struct SpotDetailView: View {
             }
             .padding(.horizontal)
             
+            Map(coordinateRegion: $mapRegion, showsUserLocation: true, annotationItems: annotations) { annotation in
+                MapMarker(coordinate: annotation.coordinate)
+            }
+            .onChange(of: spot) { _ in
+                annotations = [Annotation(name: spot.name, address: spot.address, coordinate: spot.coordinate)]
+                mapRegion.center = spot.coordinate
+            }
+            
             Spacer()
+        }
+        .onAppear {
+            if spot.id != nil {
+                mapRegion = MKCoordinateRegion(center: spot.coordinate, latitudinalMeters: regionSize, longitudinalMeters: regionSize)
+            } else {
+                Task {
+                    mapRegion = MKCoordinateRegion(center: locationManager.location?.coordinate ?? CLLocationCoordinate2D(), latitudinalMeters: regionSize, longitudinalMeters: regionSize)
+                }
+            }
+            annotations = [Annotation(name: spot.name, address: spot.address, coordinate: spot.coordinate)]
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(spot.id == nil)
@@ -79,6 +109,7 @@ struct SpotDetailView_Previews: PreviewProvider {
         NavigationStack {
             SpotDetailView(spot: Spot())
                 .environmentObject(SpotViewModel())
+                .environmentObject(LocationManager())
         }
         
     }
