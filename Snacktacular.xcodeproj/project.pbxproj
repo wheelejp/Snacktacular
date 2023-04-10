@@ -29,6 +29,7 @@
 		8598C1A329D21E2900FDBB1D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8598C1A229D21E2900FDBB1D /* FirebaseStorage */; };
 		8598C1A529D21FF800FDBB1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8598C1A429D21FF800FDBB1D /* GoogleService-Info.plist */; };
 		85EC1E8929E4664D007C80DC /* SpotReviewRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EC1E8829E4664D007C80DC /* SpotReviewRowView.swift */; };
+		85EC1E8B29E4839A007C80DC /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EC1E8A29E4839A007C80DC /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		8598C19429D1E7C100FDBB1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8598C1A429D21FF800FDBB1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		85EC1E8829E4664D007C80DC /* SpotReviewRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotReviewRowView.swift; sourceTree = "<group>"; };
+		85EC1E8A29E4839A007C80DC /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				858BCC7829D498AB000C50EF /* Spot.swift */,
 				858BCCAC29DB4C94000C50EF /* Review.swift */,
 				858BCCA329DB429A000C50EF /* Place.swift */,
+				85EC1E8A29E4839A007C80DC /* Photo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85EC1E8B29E4839A007C80DC /* Photo.swift in Sources */,
 				858BCCA629DB429B000C50EF /* PlaceViewModel.swift in Sources */,
 				858BCC7B29D49971000C50EF /* SpotDetailView.swift in Sources */,
 				858BCCB329DB6DA3000C50EF /* ReviewViewModel.swift in Sources */,
