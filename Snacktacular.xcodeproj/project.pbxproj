@@ -28,6 +28,7 @@
 		8598C1A129D21E2900FDBB1D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8598C1A029D21E2900FDBB1D /* FirebaseFirestoreSwift */; };
 		8598C1A329D21E2900FDBB1D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8598C1A229D21E2900FDBB1D /* FirebaseStorage */; };
 		8598C1A529D21FF800FDBB1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8598C1A429D21FF800FDBB1D /* GoogleService-Info.plist */; };
+		85EC1E8929E4664D007C80DC /* SpotReviewRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EC1E8829E4664D007C80DC /* SpotReviewRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		8598C19129D1E7C100FDBB1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8598C19429D1E7C100FDBB1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8598C1A429D21FF800FDBB1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		85EC1E8829E4664D007C80DC /* SpotReviewRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotReviewRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				8598C18F29D1E7BC00FDBB1D /* LoginView.swift */,
 				858BCC7629D49242000C50EF /* ListView.swift */,
 				858BCC7A29D49971000C50EF /* SpotDetailView.swift */,
+				85EC1E8829E4664D007C80DC /* SpotReviewRowView.swift */,
 				858BCCA129DB4298000C50EF /* PlaceLookupView.swift */,
 				858BCCAE29DB4DB4000C50EF /* ReviewView.swift */,
 				858BCCB029DB6467000C50EF /* StarsSelectionView.swift */,
@@ -226,6 +229,7 @@
 				858BCCA529DB429B000C50EF /* PlaceLookupView.swift in Sources */,
 				858BCCB129DB6467000C50EF /* StarsSelectionView.swift in Sources */,
 				858BCCA829DB429B000C50EF /* Location Manager.swift in Sources */,
+				85EC1E8929E4664D007C80DC /* SpotReviewRowView.swift in Sources */,
 				858BCCAF29DB4DB4000C50EF /* ReviewView.swift in Sources */,
 				8598C19029D1E7BC00FDBB1D /* LoginView.swift in Sources */,
 				858BCC7D29D49C82000C50EF /* SpotViewModel.swift in Sources */,
