@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct PhotoView: View {
     @EnvironmentObject var spotVM: SpotViewModel
-    @State private var photo = Photo()
+    @Binding var photo: Photo
     var uiImage: UIImage
     var spot: Spot
     @Environment(\.dismiss) private var dismiss
@@ -26,6 +27,7 @@ struct PhotoView: View {
                 
                 TextField("Description", text: $photo.description)
                     .textFieldStyle(.roundedBorder)
+                    .disabled(Auth.auth().currentUser?.email != photo.reviewer)
                 
                 Text("by: \(photo.reviewer) on: \(photo.postedOn.formatted(date: .numeric, time: .omitted ))")
                     .lineLimit(1)
@@ -33,21 +35,32 @@ struct PhotoView: View {
             }
             .padding()
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") {
-                         dismiss()
+                if Auth.auth().currentUser?.email == photo.reviewer {
+                    //image was posted by current user
+                    ToolbarItem(placement: .cancellationAction) {
+                        Button("Cancel") {
+                            dismiss()
+                        }
                     }
-                }
-                ToolbarItem(placement: .automatic) {
-                    Button("Save") {
-                        Task {
-                            let success = await spotVM.saveImage(spot: spot, photo: photo, image: uiImage)
-                            if success {
-                                dismiss()
+                    ToolbarItem(placement: .automatic) {
+                        Button("Save") {
+                            Task {
+                                let success = await spotVM.saveImage(spot: spot, photo: photo, image: uiImage)
+                                if success {
+                                    dismiss()
+                                }
                             }
                         }
                     }
+                } else {
+                    //image was not posted by current user
+                    ToolbarItem(placement: .automatic) {
+                        Button("Done") {
+                            dismiss()
+                        }
+                    }
                 }
+                
             }
         }
         
@@ -56,7 +69,7 @@ struct PhotoView: View {
 
 struct PhotoView_Previews: PreviewProvider {
     static var previews: some View {
-        PhotoView(uiImage: UIImage(named: "pizza") ?? UIImage(), spot: Spot())
+        PhotoView(photo: .constant(Photo()),uiImage: UIImage(named: "pizza") ?? UIImage(), spot: Spot())
             .environmentObject(SpotViewModel())
     }
 }
