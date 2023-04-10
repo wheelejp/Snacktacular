@@ -31,6 +31,7 @@
 		85EC1E8929E4664D007C80DC /* SpotReviewRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EC1E8829E4664D007C80DC /* SpotReviewRowView.swift */; };
 		85EC1E8B29E4839A007C80DC /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EC1E8A29E4839A007C80DC /* Photo.swift */; };
 		85EC1E8D29E48A10007C80DC /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EC1E8C29E48A10007C80DC /* PhotoView.swift */; };
+		85EC1E8F29E491D8007C80DC /* SpotDetailPhotoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EC1E8E29E491D8007C80DC /* SpotDetailPhotoScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		85EC1E8829E4664D007C80DC /* SpotReviewRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotReviewRowView.swift; sourceTree = "<group>"; };
 		85EC1E8A29E4839A007C80DC /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		85EC1E8C29E48A10007C80DC /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		85EC1E8E29E491D8007C80DC /* SpotDetailPhotoScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailPhotoScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				8598C18F29D1E7BC00FDBB1D /* LoginView.swift */,
 				858BCC7629D49242000C50EF /* ListView.swift */,
 				858BCC7A29D49971000C50EF /* SpotDetailView.swift */,
+				85EC1E8E29E491D8007C80DC /* SpotDetailPhotoScrollView.swift */,
 				85EC1E8829E4664D007C80DC /* SpotReviewRowView.swift */,
 				858BCCA129DB4298000C50EF /* PlaceLookupView.swift */,
 				858BCCAE29DB4DB4000C50EF /* ReviewView.swift */,
@@ -246,6 +249,7 @@
 				858BCCA729DB429B000C50EF /* Place.swift in Sources */,
 				858BCC7729D49242000C50EF /* ListView.swift in Sources */,
 				858BCC7929D498AB000C50EF /* Spot.swift in Sources */,
+				85EC1E8F29E491D8007C80DC /* SpotDetailPhotoScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
